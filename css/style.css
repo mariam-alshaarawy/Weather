@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #1e202b;
+
+}
+.site-title{
+    color: white;
+}
+.site-description{
+    color: gray;
+}
+.navbar-nav .nav-link{
+    color: white;
+    font-size: 14px;
+}
+.navbar-nav .nav-link.active {
+    color:#009ad8;
+    border:solid 2px #009ad8;
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.nav-link:hover{
+    color:#009ad8;
+    border:solid 2px #009ad8;
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.hero{
+
+}
+.find-location{
+    background-color: #009ad8;
+    margin-bottom: 70px;
+    position: relative;
+    width: 80%;
+}
+#search{
+border-radius: 30px;
+padding: 14px;
+background: #1e202b;
+border: none;
+position: absolute;
+top: 60px;
+right: 0px;
+color: aliceblue;
+}
+#search::placeholder{
+    color: rgb(255, 253, 253);
+    padding-left: 10px;
+}
+#submit{
+    width: 10%;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    top: 63px;
+    right: 4px;
+    background-color: #009ad8;
+    color: aliceblue;
+}
+.table{
+    position: absolute;
+    top: 300px;
+    right: 0px;
+}
+tr{
+    width: 33%;
+}
+.degree{
+    position: relative;
+    height: 150px;
+    width: 100%;
+
+}
+.num-today{
+    position: absolute;
+    font-size: 100px;
+    font-weight: bold;
+}
+.forecast-icon{
+    position: absolute;
+    left: 300px;
+    font-size: 70px;
+}
+.num-tomorow{
+font-size: 30px;
+font-weight: bold;
+}
+.num-afterTomorow{
+    font-size: 30px;
+font-weight: bold;
+}
+
+.nextDayName{
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+
+}
+.right{
+    float: right;
+    padding: 5px;
+}
+
+.customm, .custom{
+    color: #009ad8;
+}
+

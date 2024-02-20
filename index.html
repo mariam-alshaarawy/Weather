@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <!--CSS-->
+    <!--<link rel="stylesheet" href="css/all.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>Weather App</title>
+
+</head>
+<body>
+    <nav id="navbar-example" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand ms-5 d-flex p-2" href="/index.html">
+                <img src="imgs/logo@2x.png" width="64" height="38">
+                <div class="logo-type px-3 fs-6">
+                    <h1 class="site-title fw-bold fs-5 pb-0 mb-0">Weather</h1>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+            </a>
+            <div class="collapse navbar-collapse fw-semibold " id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto p-4">
+                    <li class="nav-item p-3">
+                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#livecameras">Live cameras</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#photos">Photos</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="hero" style="background-image: url('imgs/bg.jpg'); height:400px; width:100%; background-position: center; background-color: rgba(8, 9, 10, 0.395);">
+            <div class="container">
+                <form class="find-location m-auto">
+                    <input class=" form-control" type="text" placeholder="Find Your Location.." id="search">
+                    <input class="form-control" type="button" value="Find" id="submit">
+                    <div class="container">
+                        <table class="table table-dark table-striped-columns">
+                            <tbody>
+                                <tr>
+                                    <td id="todayName">Tuseday <span id="todayDate-month" class="right">January</span><span id="todayDate-number" class="right">16</span></td>
+                                    <td class="nextDayName">Wednesday</td>
+                                    <td class="nextDayName">Thuresday</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="forecast-content" id="current">
+                                            <div id="todayLocation" class="location w-25 "></div>
+                                            <div class="degree d-flex m-auto">
+                                                    <div id="todayTemp" class="num-today"></div>
+                                                    <div><sup>o</sup>C</div>
+                                                    <div id="todayConditionImg" class="forecast-icon">
+                                                        <!-- <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="90"> -->
+                                                    </div>	
+                                            </div>
+                                            <div id="todayCondidtionText" class="customm m-3"></div>
+                                            <span id="humidity" class="p-2"></span><span><img src="imgs/icon-umberella.png" class="p-2" alt=""></span>
+                                            <span id="wind" class="p-2"></span><span><img src="imgs/icon-wind.png" class="p-2" alt=""></span>
+                                            <span id="windDirection" class="p-2"></span><span><img src="imgs/icon-compass.png" class="p-2" alt=""></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="forecast-content" id="tommorrow">
+                                            <div class="degree d-flex flex-column  justify-content-center align-items-center">
+                                                <div id="nextMaxTemp" class="num-tomorow"><sup>o</sup>C</div>
+                                                <div id="nextMinTemp" class="small-num-tomorow"><sup>o</sup>C</div>
+                                                <div id="nextConditionText" class="custom mt-5"></div>
+                                            </div>
+                                            
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="forecast-content" id="afterTommorrow">
+                                        <div class="degree  d-flex flex-column  justify-content-center align-items-center">
+                                            <div class="num-tomorow"><sup>o</sup>C</div>
+                                            <div class="small-num-tomorow"><sup>o</sup>C</div>
+                                            <div class="custom mt-5"></div>
+                                        </div>
+                                        
+                                    </div>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+        <script src="js/main.js"></script>
+</body>
+</html>
